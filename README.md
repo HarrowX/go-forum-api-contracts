@@ -1,0 +1,1 @@
+# Go forum api contracts
