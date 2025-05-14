@@ -1,3 +1,3 @@
-module github.com/HarrowX/forum-api-contracts
+module github.com/HarrowX/go-forum-api-contracts
 
 go 1.24.2
