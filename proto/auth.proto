@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package auth;
 
-option go_package = "github.com/HarrowX/go-forum-api-contracts/proto";
+option go_package = "alexandrit.auth.v1;authv1";
 
 service AuthService {
   rpc Register (RegisterRequest) returns (AuthResponse);
