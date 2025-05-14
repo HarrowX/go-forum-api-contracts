@@ -1,8 +1,11 @@
 #!/bin/bash
 
-# Генерируем Go-код из proto-файла
-protoc --go_out=. --go_opt=paths=source_relative \
-       --go-grpc_out=. --go-grpc_opt=paths=source_relative \
+# Создаем целевую директорию
+mkdir -p pkg/proto
+
+# Генерируем в pkg/proto
+protoc --go_out=pkg/proto --go_opt=paths=source_relative \
+       --go-grpc_out=pkg/proto --go-grpc_opt=paths=source_relative \
        proto/auth.proto
 
-echo "Код успешно сгенерирован!"
+echo "Файлы сгенерированы в pkg/proto"
